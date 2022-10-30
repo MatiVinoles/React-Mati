@@ -2,7 +2,7 @@ import React from "react";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import "./NavBar.css";
+import "./nav-bar.css";
 import CartWidget from "./CartWidget";
 
 
@@ -10,8 +10,8 @@ export default function NavBar() {
   return (
     <>
     <Navbar bg="light" variant="light">
-        <Container fluid>
-          <Nav className="me-auto nav">
+        <Container className="col-md-4">
+          <Nav className="me-auto">
             <Nav.Link href="#inicio">Inicio</Nav.Link>
             <Nav.Link href="#nosotros">Nosotros</Nav.Link>
             <Nav.Link href="#tienda">Tienda</Nav.Link>
@@ -19,7 +19,7 @@ export default function NavBar() {
           </Nav>
         </Container>
 
-        <CartWidget amount="1"/>
+        <CartWidget amount=""/>
     </Navbar>
     </>
   );

@@ -1,0 +1,6 @@
+.cartAndCounter {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+}
+  
