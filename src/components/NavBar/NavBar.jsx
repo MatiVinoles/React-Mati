@@ -1,30 +1,47 @@
 import React from "react";
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-import "./nav-bar.css";
-import CartWidget from "./CartWidget";
-
+import "./navBar.css";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { BsFillCartFill } from "react-icons/bs";
+import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
+  const navRef = useRef();
+
+  const showNavBar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
+
+  const hideNavBar = () => {
+    navRef.current.classList.remove("responsive_nav");
+  };
+
   return (
     <>
-    <Navbar bg="light" variant="light">
-        <Container className="col-md-4">
-          <Nav className="me-auto">
-            <Nav.Link href="#inicio">Inicio</Nav.Link>
-            <Nav.Link href="#nosotros">Nosotros</Nav.Link>
-            <Nav.Link href="#tienda">Tienda</Nav.Link>
-            <Nav.Link href="#contacto">Contacto</Nav.Link>
-          </Nav>
-        </Container>
+      <header>
+        <Link to="/" className="title">
+          Coffee House
+        </Link>
 
-        <CartWidget amount=""/>
-    </Navbar>
+        <nav to={navRef}>
+          <Link to="/" className="nav-tag">Inicio</Link>
+          <Link to="/Nosotros" className="nav-tag">Nosotros</Link>
+          <Link to="/Tienda" className="nav-tag">Tienda</Link>
+          <Link to="/Contacto" className="nav-tag">Contacto</Link>
+
+          <button className="nav-btn-cart">
+            <BsFillCartFill />
+          </button>
+
+          <button className="nav-btn nav-close-btn" onClick={hideNavBar}>
+            <FaTimes />
+          </button>
+        </nav>
+
+        <button className="nav-btn" onClick={showNavBar}>
+          <FaBars />
+        </button>
+      </header>
     </>
   );
 }
-
-
-
-
