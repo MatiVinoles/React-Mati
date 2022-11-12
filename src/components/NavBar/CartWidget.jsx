@@ -1,19 +1,11 @@
 import React from "react";
 import "./cart-widget.css";
+import { BsFillCartFill } from "react-icons/bs";
 
-function CartWidget(props) {
+export default function CartWidget() {
   return (
-    <div className="cartAndCounter">
-      <div>
-        <h3>{props.amount}</h3>
-      </div>
-      <div>
-        <a href="carrito">
-          <img alt="carrito" src="/img/shoppingCart.png" />
-        </a>
-      </div>
-    </div>
+    <button className="nav-btn-cart">
+      <BsFillCartFill />
+    </button>
   );
 }
-
-export default CartWidget;

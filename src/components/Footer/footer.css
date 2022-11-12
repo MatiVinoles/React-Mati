@@ -1,0 +1,28 @@
+.developer {
+    text-decoration: none;
+    color: #FFE9B1;
+    margin-left: 3rem;
+}
+
+.developer:hover {
+    color: #FCFDF2;
+    font-size: 1rem;
+}
+
+.footer {
+    background-color: #3B3486;
+}
+
+.brandName, .copy {
+    color: #FFE9B1;
+}
+
+.socialMedia {
+    background-color: #FFE9B1;
+    color: #3B3486;
+}
+
+.socialMedia:hover {
+    font-size: 3rem;
+    color: #7743DB;
+}

@@ -1,20 +1,25 @@
 import React from "react";
 import Item from "../ItemList/Item";
-import "./itemListContainer.css"
+import "./itemListContainer.css";
 import getItems from "../../Services/mockService";
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+
+
+
 
 export default function ItemListContainer() {
   const [products, setProducts] = useState([]);
+  const { categoryId } = useParams();
 
-  useEffect(
-    () => {
-      getItems().then((respuesta) => {
-        setProducts(respuesta);
-      });
-    },
-    []
-  )
+  async function getItemsAsync() {
+    let respuesta = await getItems(categoryId);
+    setProducts(respuesta);
+  }
+
+  useEffect(() => {
+    getItemsAsync();
+  }, [categoryId]);
 
   return (
     <div className="grillaItems">
@@ -22,6 +27,7 @@ export default function ItemListContainer() {
         return (
           <Item
             key={product.id}
+            id={product.id}
             img={product.img}
             title={product.title}
             price={product.price}

@@ -15,12 +15,13 @@ button {
     transform: scale(1.02);
 }
 
-.botonDetail {
-    background-color: #FFE9B1;
-    color: #3B3486;
+.botonComprar {
+    background-color: #3B3486;
+    color: #FFE9B1;
     border-radius: 10px;
+    
 }
 
-.botonDetail:hover {
+.botonComprar:hover {
     transform: scalex(1.05);
 }
