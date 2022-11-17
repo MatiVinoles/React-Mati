@@ -1,10 +1,10 @@
 import React from 'react';
-import { CDBFooter, CDBBox, CDBBtn, CDBIcon } from 'cdbreact';
+import { CDBBox, CDBIcon } from 'cdbreact';
 import "./footer.css";
 
 export const Footer = () => {
   return (
-    <CDBFooter className="shadow footer">
+    <footer className="shadow footer">
       <CDBBox
         display="flex"
         justifyContent="between"
@@ -17,17 +17,17 @@ export const Footer = () => {
           <small className="ml-2 copy">&copy;   <a className='developer' href="http://www.linkedin.com/in/matias-viñoles-609a3b18a">Matías Viñoles</a> , 2022. All rights reserved.</small>
         </CDBBox>
         <CDBBox display="flex">
-          <CDBBtn className="p-2 socialMedia">
+          <button className="p-2 socialMedia">
             <CDBIcon fab icon="facebook-f" />
-          </CDBBtn>
-          <CDBBtn className="mx-3 p-2 socialMedia">
+          </button>
+          <button className="mx-3 p-2 socialMedia">
             <CDBIcon fab icon="twitter" />
-          </CDBBtn>
-          <CDBBtn className="p-2 socialMedia">
+          </button>
+          <button className="p-2 socialMedia">
             <CDBIcon fab icon="instagram"/>
-          </CDBBtn>
+          </button>
         </CDBBox>
       </CDBBox>
-    </CDBFooter>
+    </footer>
   );
 };

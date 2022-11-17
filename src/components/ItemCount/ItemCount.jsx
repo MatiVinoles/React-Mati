@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./itemcount.css";
 
-function ItemCount({ stock }) {
+function ItemCount({ stock, onAddToCart }) {
   const [count, setCount] = useState(1);
 
   function handleAdd(event) {
@@ -24,7 +24,7 @@ function ItemCount({ stock }) {
         </button>
       </div>
 
-      <button className="botonComprar" style={{ alignSelf: "flex-end" }}>
+      <button onClick={()=> onAddToCart(count)} className="botonComprar" style={{ alignSelf: "flex-end" }}>
         Comprar
       </button>
     </div>

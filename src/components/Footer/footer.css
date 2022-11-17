@@ -20,9 +20,12 @@
 .socialMedia {
     background-color: #FFE9B1;
     color: #3B3486;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;
 }
 
 .socialMedia:hover {
-    font-size: 3rem;
     color: #7743DB;
 }
