@@ -11,12 +11,17 @@
     margin-bottom: 1rem;
 }
 
-
   .botonComprar:hover {
     transform: scalex(1.05);
 }
 
-.botonContador {
+.buttonsCounter {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonMinus{
+    margin-right: 1rem;
     font-size: 19px;
     border-radius: 10px;
     width: 2.5rem;
@@ -24,7 +29,11 @@
     background-color: #FFE9B1;
 }
 
-.buttonsCounter {
-    display: flex;
-    justify-content: center;
+.buttonPlus {
+    margin-left: 1rem;
+    font-size: 19px;
+    border-radius: 10px;
+    width: 2.5rem;
+    height: 2rem;
+    background-color: #FFE9B1;
 }

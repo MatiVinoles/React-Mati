@@ -16,7 +16,7 @@ export default function ItemDetail({ product }) {
             <Card.Title style={{ height: "15px" }}>{product.title}</Card.Title>
             <Card.Text style={{ textAlign: "center" }}>U$S {product.price}</Card.Text>
             <Card.Text style={{ textAlign: "center" }}>{product.description}</Card.Text>
-            <ItemCount stock={5}/>
+            <ItemCount stock={product.stock}/>
           </Card.Body>
         </Card>
       </Row>

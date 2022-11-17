@@ -15,11 +15,11 @@ function ItemCount({ stock }) {
   return (
     <div>
       <div className="buttonsCounter">
-        <button className="botonContador" onClick={handleSubstract}>
+        <button className="buttonMinus" onClick={handleSubstract}>
           -
         </button>
         <span>{count}</span>
-        <button className="botonContador" onClick={handleAdd}>
+        <button className="buttonPlus" onClick={handleAdd}>
           +
         </button>
       </div>
