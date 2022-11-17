@@ -2,26 +2,6 @@ p {
     text-align: justify;
 }
 
-button {
-    font-size: 20px;
-    line-height: 50px;
-    text-align: center;
-    width: 100px;
-    height: 40px;
-    border-color: transparent;
-  }
-
 .card:hover {
     transform: scale(1.02);
-}
-
-.botonComprar {
-    background-color: #3B3486;
-    color: #FFE9B1;
-    border-radius: 10px;
-    
-}
-
-.botonComprar:hover {
-    transform: scalex(1.05);
 }
