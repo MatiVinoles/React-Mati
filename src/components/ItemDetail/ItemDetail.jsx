@@ -3,13 +3,18 @@ import Card from "react-bootstrap/Card";
 import { Container, Row } from "react-bootstrap";
 import "./itemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
+import { useContext } from "react";
+import { cartContext } from "../../Context/cartContext";
 
 export default function ItemDetail({ product }) {
 
+  const {addToCart} = useContext(cartContext);
+
   function onAddToCart(count) {
-    alert(`Agregaste ${count} items al carrito`)
+    alert(`Agregaste ${count} items al carrito`);
+    addToCart(product,count);
   }
-  
+
   return (
     <Container
       style={{ width: "22rem", marginTop: "3rem", minHeight: "100vh" }}
