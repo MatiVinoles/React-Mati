@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer/Footer";
 import { CartContextProvider } from "./Context/cartContext";
+import CartView from "./components/Cart/CartView";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               element={<ItemListContainer />}
             />
             <Route path="/detail/:id" element={<ItemDetailContainer />} />
+            <Route path="/cart" element={<CartView/>}/>
           </Routes>
         </div>
         <Footer />

@@ -3,16 +3,17 @@ import Card from "react-bootstrap/Card";
 import { Container, Row } from "react-bootstrap";
 import "./itemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { cartContext } from "../../Context/cartContext";
+import { Link } from "react-router-dom";
 
 export default function ItemDetail({ product }) {
-
-  const {addToCart} = useContext(cartContext);
+  const [isInCart, setIsInCart] = useState(false);
+  const { addToCart } = useContext(cartContext);
 
   function onAddToCart(count) {
-    alert(`Agregaste ${count} items al carrito`);
-    addToCart(product,count);
+    setIsInCart(count);
+    addToCart(product, count);
   }
 
   return (
@@ -30,7 +31,13 @@ export default function ItemDetail({ product }) {
             <Card.Text style={{ textAlign: "center" }}>
               {product.description}
             </Card.Text>
-            <ItemCount onAddToCart={onAddToCart} stock={product.stock} />
+            {isInCart ? (
+              <Link to="/cart">
+                <button className="goCart">Ir al carrito</button>
+              </Link>
+            ) : (
+              <ItemCount onAddToCart={onAddToCart} stock={product.stock} />
+            )}
           </Card.Body>
         </Card>
       </Row>

@@ -1,7 +1,14 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getFirestore, collection, getDocs } from "firebase/firestore";
-// TODO: Add SDKs for Firebase products that you want to use
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  doc,
+  getDoc,
+  query,
+  where,
+} from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCdRbFwpJiBrMSD560zK6QXh6FVJiwI78g",
@@ -31,4 +38,34 @@ export default async function getItems() {
   return documentsData;
 }
 
-export async function getOneItem() {}
+//2-Traer documento por ID
+
+export async function getOneItem(idParams) {
+  const docRef = doc(DB, "products", idParams);
+
+  const docSnapshot = await getDoc(docRef);
+
+  return {
+    ...docSnapshot.data(),
+    id: docSnapshot.id,
+  };
+}
+
+//3- Traer documentos según su categoría
+export async function getItemsByCategory(categoryParams) {
+  const collectionRef = collection(DB, "products");
+
+  const queryCat = query(
+    collectionRef,
+    where("category", "==", categoryParams)
+  );
+  const documentSnapshot = await getDocs(queryCat);
+
+  const documentsData = documentSnapshot.docs.map((doc) => {
+    return {
+      ...doc.data(),
+      id: doc.id,
+    };
+  });
+  return documentsData;
+}

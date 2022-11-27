@@ -1,6 +1,4 @@
 import { createContext, useState } from "react";
-import Item from "../components/ItemList/Item";
-import products from "../products";
 
 export const cartContext = createContext();
 
@@ -18,9 +16,9 @@ export function CartContextProvider({children}) {
     if (getItemQuantity !== -1) {
       newCart[getItemQuantity].count += count;
       setCart(newCart);
-    } else product.count = count;
+    } else {product.count = count;
     newCart.push(product);
-    setCart(newCart);
+    setCart(newCart);}
   }
 
   function clearCart() {
@@ -44,7 +42,7 @@ export function CartContextProvider({children}) {
   }
   return (
     <ContextProvider
-      value={{ cart, addToCart, setCart, clearCart, removeItem, itemsInCart }}
+      value={{ cart, addToCart, setCart, clearCart, removeItem, itemsInCart, cartPrice }}
     >
       {children}
     </ContextProvider>

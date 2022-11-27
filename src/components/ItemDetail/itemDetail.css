@@ -5,3 +5,15 @@ p {
 .card:hover {
     transform: scale(1.02);
 }
+
+.goCart {
+    background-color: #FFE9B1;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 8rem;
+    color: #3B3486;
+}
+
+.goCart:hover {
+    transform: scalex(1.05);
+}
