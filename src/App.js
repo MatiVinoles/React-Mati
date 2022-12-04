@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer/Footer";
 import { CartContextProvider } from "./Context/cartContext";
 import CartView from "./components/Cart/CartView";
+import CompletedPurchase from "./components/CompletedPurchase/CompletedPurchase";
 
 function App() {
   return (
@@ -22,7 +23,11 @@ function App() {
               element={<ItemListContainer />}
             />
             <Route path="/detail/:id" element={<ItemDetailContainer />} />
-            <Route path="/cart" element={<CartView/>}/>
+            <Route path="/cart" element={<CartView />} />
+            <Route
+              path="/CompletedPurchase/:orderId"
+              element={<CompletedPurchase />}
+            />
           </Routes>
         </div>
         <Footer />

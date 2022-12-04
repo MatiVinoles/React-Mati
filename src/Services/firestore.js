@@ -8,6 +8,7 @@ import {
   getDoc,
   query,
   where,
+  addDoc
 } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -68,4 +69,11 @@ export async function getItemsByCategory(categoryParams) {
     };
   });
   return documentsData;
+}
+
+export async function createOrder(order){
+    const collectionRef = collection(DB, "orders");
+    const docOrder = await addDoc(collectionRef, order);
+
+    return docOrder.id;
 }

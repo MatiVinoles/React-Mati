@@ -1,0 +1,13 @@
+.order {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.id {
+    color: #3B3486;
+    font-weight: bold;
+}

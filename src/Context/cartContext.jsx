@@ -38,7 +38,9 @@ export function CartContextProvider({children}) {
   }
 
   function cartPrice() {
-    /*Calcular costo total */
+    let total = 0;
+    cart.forEach((product) => (total = total + (product.price*product.count)))
+    return total;
   }
   return (
     <ContextProvider

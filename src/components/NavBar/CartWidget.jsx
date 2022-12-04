@@ -14,7 +14,7 @@ export default function CartWidget() {
     <Link to="/cart">
     <button className="nav-btn-cart">
       <BsFillCartFill />
-      <span>{miContext.itemsInCart()}</span>
+      <span className="counter">{miContext.itemsInCart()}</span>
     </button></Link>
   );
 }

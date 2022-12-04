@@ -1,52 +1,44 @@
 .deleteButton {
-    width: 3rem;
+  width: 3rem;
 }
 
-
 .botonLimpiar {
-    margin: 20px;
-    background-color: #3B3486;
-    color: #FFE9B1;
-    font-weight: bold;
-    border-radius: 10px;
-    width: 8rem;
+  margin: 20px;
+  background-color: #3b3486;
+  color: #ffe9b1;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 8rem;
 }
 
 .botonLimpiar:hover {
-    transform: scalex(1.05);
+  transform: scalex(1.05);
 }
 
 .cartGrid {
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px 15px;
-  }
-
-.grid {
-    height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px 15px;
 }
 
-.botonCompraFinal {
-    margin: 20px;
-    background-color: rgb(34, 238, 34);
-    font-weight: bold;
-    border-radius: 10px;
-    width: 9rem;
+.grid {
+  height: 100vh;
 }
 
 .botonCompraFinal:hover {
-    transform: scalex(1.05);
+  transform: scalex(1.05);
 }
 
 .emptyCart {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .totalCompra {
-    margin-top: 20px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: x-large;
 }
-
