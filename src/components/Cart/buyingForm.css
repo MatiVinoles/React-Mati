@@ -6,3 +6,6 @@
     width: 9rem;
 }
 
+.botonCompraFinal:hover {
+    transform: scalex(1.05);
+  }

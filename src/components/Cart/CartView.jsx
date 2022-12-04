@@ -32,7 +32,7 @@ export default function CartView() {
   }
 
   return (
-    <div className="grid">
+    <div>
       <div className="d-flex justify-content-between">
         <button className="botonLimpiar" onClick={() => clearCart()}>
           Limpiar carrito

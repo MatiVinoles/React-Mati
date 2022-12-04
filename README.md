@@ -1,70 +1,95 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a name="readme-top"></a>
 
-## Available Scripts
 
-In the project directory, you can run:
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a>
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-### `npm test`
+  <h3 align="center">QuieroCelu Store</h3>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <p align="center">
+   Se te rompió el celular? Comprate uno en QuieroCelu
+  </p>
+</div>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Tabla de contenidos</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">Acerca del proyecto</a>
+      <ul>
+        <li><a href="#built-with">Construido con</a></li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li><a href="#instalación">Instalación</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- ABOUT THE PROJECT -->
+## Acerca del proyecto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[![Product Name Screen Shot][product-screenshot]](https://i.postimg.cc/nhJTqnRk/Screenshot-1.jpg)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Esta tienda es el proyecto construído a lo largo del curso de React de Coderhouse. En esta tienda se comercializan 3 marcas de celulares, con 3 opciones
+cada una. Para finalizar la compra, se pide completar un formulario, y se le da al cliente un número de órden.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p align="right">(<a href="#readme-top">Volver arriba</a>)</p>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Construido con
 
-### Code Splitting
+En este proyecto use Bootstrap, React Icons, Font Awesome, Firebase, Chakra UI.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="right">(<a href="#readme-top">Volver arriba</a>)</p>
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Instalación
 
-### Advanced Configuration
+1. Clona el repositorio
+   ```sh
+   git clone https://github.com/MatiVinoles/React-Mati.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Ejecutar el siguiente comando
+  ```sh
+  npm start
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<p align="right">(<a href="#readme-top">Volver arriba</a>)</p>
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contacto
+
+Matías Viñoles - vinolesmatiasgmail.com
+
+Project Link: [https://github.com/MatiVinoles/React-Mati.git](https://github.com/MatiVinoles/React-Mati.git)
+
+<p align="right">(<a href="#readme-top">Volver arriba</a>)</p>
+
+
