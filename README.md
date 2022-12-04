@@ -16,17 +16,17 @@
   <summary>Tabla de contenidos</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Acerca del proyecto</a>
-      <ul>
-        <li><a href="#built-with">Construido con</a></li>
-      </ul>
+    <a href="#about-the-project">Acerca del proyecto</a>
+    </li> 
+    <li>
+    <a href="#built-with">Construido con</a>
     </li>
     <li>
-      <ul>
-        <li><a href="#instalación">Instalación</a></li>
-      </ul>
+    <a href="#instalación">Instalación</a>
     </li>
-    <li><a href="#contact">Contact</a></li>
+    <li>
+    <a href="#contact">Contact</a>
+    </li>
   </ol>
 </details>
 
