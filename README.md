@@ -38,9 +38,10 @@ En este proyecto use Bootstrap, React Icons, Font Awesome, Firebase.
 
 ## Contacto
 
-Matías Viñoles - vinolesmatiasgmail.com
+Matías Viñoles
 
-Project Link: [https://github.com/MatiVinoles/React-Mati.git](https://github.com/MatiVinoles/React-Mati.git)
-Mi Linkedin: [https://www.linkedin.com/in/matias-vi%C3%B1oles-609a3b18a/](https://www.linkedin.com/in/matias-vi%C3%B1oles-609a3b18a/)
+Project Link: [https://github.com/MatiVinoles/React-Mati.git](https://github.com/MatiVinoles/React-Mati.git) <br>
+Mi Linkedin: [https://www.linkedin.com/in/matias-vi%C3%B1oles-609a3b18a/](https://www.linkedin.com/in/matias-vi%C3%B1oles-609a3b18a/)<br>
+Mi Email: [vinolesmatiasgmail.com](vinolesmatias@gmail.com)
 
 <p align="right">(<a href="#readme-top">Volver arriba</a>)</p>
