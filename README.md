@@ -14,14 +14,12 @@
 
 ## Acerca del proyecto
 
-<img source="https://i.postimg.cc/nhJTqnRk/Screenshot-1.jpg" href="Tienda de celulares"/>
-
 Esta tienda es el proyecto construído a lo largo del curso de React de Coderhouse. En esta tienda se comercializan 3 marcas de celulares, con 3 opciones
 cada una. Para finalizar la compra, se pide completar un formulario, y se le da al cliente un número de órden.
 
 ### Construido con
 
-En este proyecto use Bootstrap, React Icons, Font Awesome, Firebase, Chakra UI.
+En este proyecto use Bootstrap, React Icons, Font Awesome, Firebase.
 
 ### Instalación
 
@@ -43,5 +41,6 @@ En este proyecto use Bootstrap, React Icons, Font Awesome, Firebase, Chakra UI.
 Matías Viñoles - vinolesmatiasgmail.com
 
 Project Link: [https://github.com/MatiVinoles/React-Mati.git](https://github.com/MatiVinoles/React-Mati.git)
+Mi Linkedin: [https://www.linkedin.com/in/matias-vi%C3%B1oles-609a3b18a/](https://www.linkedin.com/in/matias-vi%C3%B1oles-609a3b18a/)
 
 <p align="right">(<a href="#readme-top">Volver arriba</a>)</p>
