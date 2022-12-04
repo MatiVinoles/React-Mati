@@ -11,41 +11,17 @@
   </p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Tabla de contenidos</summary>
-  <ol>
-    <li>
-    <a href="#about-the-project">Acerca del proyecto</a>
-    </li> 
-    <li>
-    <a href="#built-with">Construido con</a>
-    </li>
-    <li>
-    <a href="#instalación">Instalación</a>
-    </li>
-    <li>
-    <a href="#contact">Contact</a>
-    </li>
-  </ol>
-</details>
-
-<!-- ABOUT THE PROJECT -->
 
 ## Acerca del proyecto
 
-[![https://i.postimg.cc/nhJTqnRk/Screenshot-1.jpg]](https://i.postimg.cc/nhJTqnRk/Screenshot-1.jpg)
+<img source="https://i.postimg.cc/nhJTqnRk/Screenshot-1.jpg" href="Tienda de celulares"/>
 
 Esta tienda es el proyecto construído a lo largo del curso de React de Coderhouse. En esta tienda se comercializan 3 marcas de celulares, con 3 opciones
 cada una. Para finalizar la compra, se pide completar un formulario, y se le da al cliente un número de órden.
 
-
-
 ### Construido con
 
 En este proyecto use Bootstrap, React Icons, Font Awesome, Firebase, Chakra UI.
-
-
 
 ### Instalación
 
@@ -61,7 +37,6 @@ En este proyecto use Bootstrap, React Icons, Font Awesome, Firebase, Chakra UI.
    ```sh
    npm start
    ```
-
 
 ## Contacto
 
