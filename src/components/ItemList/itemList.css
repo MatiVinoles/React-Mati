@@ -1,7 +1,7 @@
 .grillaItems {
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    min-height: 100vh;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  min-height: 100vh;
+}

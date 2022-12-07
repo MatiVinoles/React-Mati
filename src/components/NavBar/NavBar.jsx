@@ -26,7 +26,7 @@ export default function NavBar() {
             Xiaomi
           </Link>
         </nav>
-        <CartWidget/>
+        <CartWidget />
       </header>
     </>
   );

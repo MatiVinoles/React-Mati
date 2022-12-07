@@ -6,15 +6,15 @@
   box-sizing: border-box;
   font-family: "Titillium Web", sans-serif;
 }
-.title{
-    text-decoration: none;
-    color: #FCFDF2;
-    font-size: 20px;
-    font-weight: bold;
+.title {
+  text-decoration: none;
+  color: #fcfdf2;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.title:hover{
-    color: #7743DB;
+.title:hover {
+  color: #7743db;
 }
 
 header {
@@ -23,21 +23,16 @@ header {
   justify-content: space-between;
   height: 80px;
   padding: 0 2rem;
-  background-color: #3B3486;
-  color: #FFE9B1;
+  background-color: #3b3486;
+  color: #ffe9b1;
 }
 
 nav .nav-tag {
   margin: 0 2rem;
-  color: #FFE9B1;
+  color: #ffe9b1;
   text-decoration: none;
 }
 
 nav .nav-tag:hover {
-  color: #7743DB;
+  color: #7743db;
 }
-
-
-
-
-

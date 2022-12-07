@@ -42,7 +42,11 @@ export default function CartView() {
 
       <Container className="cartGrid d-flex justify-content-evenly">
         {cart.map((item) => (
-          <Row key={item.id} style={{ width: "18rem" }} className="d-flex justify-content-center">
+          <Row
+            key={item.id}
+            style={{ width: "18rem" }}
+            className="d-flex justify-content-center"
+          >
             <Card style={{ width: "13rem", textAlign: "center" }}>
               <Card.Img style={{ height: "12rem" }} src={item.img} />
               <Card.Body className="d-flex row justify-content-center">
@@ -69,6 +73,12 @@ export default function CartView() {
           </Row>
         ))}
       </Container>
+      <div
+        className="d-flex justify-content-center"
+        style={{ marginTop: "4rem" }}
+      >
+        <h3>Completa el siguiente formulario para finalizar tu compra.</h3>
+      </div>
       <BuyingForm onSubmit={handleCheckout} />
     </div>
   );

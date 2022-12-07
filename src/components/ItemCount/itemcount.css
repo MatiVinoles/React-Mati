@@ -1,39 +1,39 @@
 .botonComprar {
-    background-color: #3B3486;
-    color: #FFE9B1;
-    border-radius: 10px;
-    font-size: 20px;
-    text-align: center;
-    width: 100px;
-    height: 40px;
-    border-color: transparent;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+  background-color: #3b3486;
+  color: #ffe9b1;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  border-color: transparent;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-  .botonComprar:hover {
-    transform: scalex(1.05);
+.botonComprar:hover {
+  transform: scalex(1.05);
 }
 
 .buttonsCounter {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.buttonMinus{
-    margin-right: 1rem;
-    font-size: 19px;
-    border-radius: 10px;
-    width: 2.5rem;
-    height: 2rem;
-    background-color: #FFE9B1;
+.buttonMinus {
+  margin-right: 1rem;
+  font-size: 19px;
+  border-radius: 10px;
+  width: 2.5rem;
+  height: 2rem;
+  background-color: #ffe9b1;
 }
 
 .buttonPlus {
-    margin-left: 1rem;
-    font-size: 19px;
-    border-radius: 10px;
-    width: 2.5rem;
-    height: 2rem;
-    background-color: #FFE9B1;
+  margin-left: 1rem;
+  font-size: 19px;
+  border-radius: 10px;
+  width: 2.5rem;
+  height: 2rem;
+  background-color: #ffe9b1;
 }

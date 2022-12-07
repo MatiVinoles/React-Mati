@@ -1,19 +1,19 @@
 p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .card:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .goCart {
-    background-color: #FFE9B1;
-    font-weight: bold;
-    border-radius: 10px;
-    width: 8rem;
-    color: #3B3486;
+  background-color: #ffe9b1;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 8rem;
+  color: #3b3486;
 }
 
 .goCart:hover {
-    transform: scalex(1.05);
+  transform: scalex(1.05);
 }

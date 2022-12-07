@@ -24,7 +24,11 @@ function ItemCount({ stock, onAddToCart }) {
         </button>
       </div>
 
-      <button onClick={()=> onAddToCart(count)} className="botonComprar" style={{ alignSelf: "flex-end" }}>
+      <button
+        onClick={() => onAddToCart(count)}
+        className="botonComprar"
+        style={{ alignSelf: "flex-end" }}
+      >
         Comprar
       </button>
     </div>

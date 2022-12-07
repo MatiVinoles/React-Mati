@@ -1,26 +1,26 @@
 p {
-    text-align: justify;
+  text-align: justify;
 }
 
 button {
-    font-size: 20px;
-    line-height: 50px;
-    text-align: center;
-    width: 100px;
-    height: 40px;
-    border-color: transparent;
-  }
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  border-color: transparent;
+}
 
 .card:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .botonDetail {
-    background-color: #FFE9B1;
-    color: #3B3486;
-    border-radius: 10px;
+  background-color: #ffe9b1;
+  color: #3b3486;
+  border-radius: 10px;
 }
 
 .botonDetail:hover {
-    transform: scalex(1.05);
+  transform: scalex(1.05);
 }

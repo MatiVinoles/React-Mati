@@ -11,17 +11,17 @@ export default function ItemDetailContainer() {
   const [isLoading, setIsLoading] = useState(true);
 
   async function getItemsAsync() {
-    getOneItem(id).then( respuesta => {
+    getOneItem(id).then((respuesta) => {
       setProduct(respuesta);
       setIsLoading(false);
-    })
+    });
   }
 
   useEffect(() => {
     getItemsAsync();
   }, []);
 
-  if (isLoading) return <Loader/>;
+  if (isLoading) return <Loader />;
 
   return <ItemDetail product={product} />;
 }

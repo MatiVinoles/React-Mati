@@ -4,7 +4,7 @@ export const cartContext = createContext();
 
 const ContextProvider = cartContext.Provider;
 
-export function CartContextProvider({children}) {
+export function CartContextProvider({ children }) {
   const [cart, setCart] = useState([]);
 
   function addToCart(product, count) {
@@ -16,9 +16,11 @@ export function CartContextProvider({children}) {
     if (getItemQuantity !== -1) {
       newCart[getItemQuantity].count += count;
       setCart(newCart);
-    } else {product.count = count;
-    newCart.push(product);
-    setCart(newCart);}
+    } else {
+      product.count = count;
+      newCart.push(product);
+      setCart(newCart);
+    }
   }
 
   function clearCart() {
@@ -39,12 +41,20 @@ export function CartContextProvider({children}) {
 
   function cartPrice() {
     let total = 0;
-    cart.forEach((product) => (total = total + (product.price*product.count)))
+    cart.forEach((product) => (total = total + product.price * product.count));
     return total;
   }
   return (
     <ContextProvider
-      value={{ cart, addToCart, setCart, clearCart, removeItem, itemsInCart, cartPrice }}
+      value={{
+        cart,
+        addToCart,
+        setCart,
+        clearCart,
+        removeItem,
+        itemsInCart,
+        cartPrice,
+      }}
     >
       {children}
     </ContextProvider>
