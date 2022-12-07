@@ -27,6 +27,8 @@ export default function CartView() {
       date: new Date(),
     };
 
+    clearCart();
+
     const orderId = await createOrder(order);
     navigate(`/CompletedPurchase/${orderId}`);
   }

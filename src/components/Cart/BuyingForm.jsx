@@ -2,8 +2,6 @@ import React from "react";
 import "./buyingForm.css";
 import Form from "react-bootstrap/Form";
 import { useState } from "react";
-import { useContext } from "react";
-import { cartContext } from "../../Context/cartContext";
 
 export default function BuyingForm(props) {
   const [data, setData] = useState({
@@ -11,14 +9,6 @@ export default function BuyingForm(props) {
     email: "",
     phone: "",
   });
-
-  const {clearCart} = useContext(cartContext)
-
-
-  function FinishPurchase(props) {
-    props.handleCheckout(data);
-    
-  }
 
   function onInputChange(evt) {
     let nameInput = evt.target.name;
@@ -37,7 +27,7 @@ export default function BuyingForm(props) {
   }
 
   return (
-    <container
+    <div
       className="d-flex justify-content-center"
       style={{ marginTop: "5rem" }}
     >
@@ -77,12 +67,12 @@ export default function BuyingForm(props) {
 
         <button
           type="submit"
-          onTouchButton={FinishPurchase()}
+          onClick={() => props.handleCheckout(data)}
           className="botonCompraFinal"
         >
           Finalizar Compra
         </button>
       </Form>
-    </container>
+    </div>
   );
 }
