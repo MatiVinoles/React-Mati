@@ -15,7 +15,7 @@
 ## Acerca del proyecto
 
 Esta tienda es el proyecto construído a lo largo del curso de React de Coderhouse. En esta tienda se comercializan 3 marcas de celulares, con 3 opciones
-cada una. Para finalizar la compra, se pide completar un formulario, y se le da al cliente un número de órden.
+cada una. Para finalizar la compra, se pide completar un formulario, y se le da al cliente un número de órden.<br>
 Para ver el deploy ingresa al siguiente link:<br>
 <a href="https://quiero-celu.netlify.app/">Link al deploy</a><br>
 
