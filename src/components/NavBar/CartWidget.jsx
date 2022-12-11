@@ -7,12 +7,15 @@ import { Link } from "react-router-dom";
 
 export default function CartWidget() {
   const miContext = useContext(cartContext);
+  const items = miContext.itemsInCart();
 
   return (
     <Link to="/cart">
       <button className="nav-btn-cart">
         <BsFillCartFill />
-        <span className="counter">{miContext.itemsInCart()}</span>
+        {items !== 0 && (
+          <span className="counter">{miContext.itemsInCart()}</span>
+        )}
       </button>
     </Link>
   );
